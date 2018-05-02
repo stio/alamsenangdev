@@ -1,0 +1,268 @@
+$font:    Helvetica, sans-serif
+$primary-color: #4a4db9
+$secondary-color: #00a24c
+$front-color: #262986 
+$std-color: #000
+$third-color: red
+$white: #fff
+
+body
+  font: 100% $font
+  color: $primary-color
+  
+%equal-heights
+  display: flex
+  flex-wrap: wrap
+
+%message-shared
+  border: 1px solid #ccc
+  padding: 10px
+  color: $front-color
+
+.message
+  @extend %message-shared
+
+.success
+  @extend %message-shared
+  border-color: green
+
+
+.error
+  @extend %message-shared
+  border-color: red
+
+
+.warning
+  @extend %message-shared
+  border-color: yellow
+  
+.box-border
+  color : $primary-color
+  border : 1px solid $front-color
+  
+.bg-default
+  background : $primary-color
+  color : $std-color
+  
+a, a:hover
+  color: $std-color
+  
+.white-color, .white-color:hover
+  color: $white
+
+.h5, h5 
+  font-size: 1rem
+
+.mt--1
+  margin-top: 1em
+
+.mt--half
+  margin-top: 0.5em
+  
+.bg-second
+  background: $secondary-color
+  color: $std-color
+  border-color: $secondary-color
+  
+footer p 
+  margin-top: 0.8em
+  margin-bottom: 0.8em
+  
+  
+.logo img
+  width: auto
+  max-height: 150px
+
+.panel-row
+  padding: 10px
+
+.panel-row:before 
+  display: block
+  content: ""
+  clear: both
+
+.panel-left, .panel-right 
+    float: left
+    width: 50%
+
+.panel-row img 
+    width: 98%
+
+.font-small
+  font-size: 13px
+
+.font-medium
+  font-size: 1em
+  line-height: 1.5em
+
+.font-most-big
+  font-size: 2em
+
+.table-display 
+    display: table
+
+.table-cell 
+    display: table-cell
+    vertical-align: middle
+
+.height--35
+  height: 35px
+
+.height--14em
+  height: 14em
+
+.height--18em
+  height: 18em
+
+.btn
+  border: none
+.btn-primary
+  background: $primary-color
+
+.btn-secondary
+  background: $secondary-color
+
+.padding--double
+  padding: 20px
+
+.font-bigger
+  font-size: 22px
+  line-height: 150%
+
+.glyphicon
+    margin-right: 4px !important
+
+.pagination .glyphicon
+    margin-right: 0px !important
+
+.pagination a
+    color: #555
+
+.panel ul
+    padding: 0px
+    margin: 0px
+    list-style: none
+
+.news-item
+    padding: 5px 10px
+    margin: 0px
+    border-bottom: 1px dotted #555 
+
+.padding-single
+  padding: 10px
+
+.panel-heading
+  background: #262986
+  color: #fff
+  border-bottom: 2px solid #555
+  margin-bottom: 4px
+ 
+p 
+  margin-bottom: 5px
+  font-size: 13px
+  line-height: 16px
+  color: #000
+
+h5
+  border-bottom: 1px solid #000
+  margin-bottom: 5px
+
+.post 
+  padding-bottom: 0px
+
+.container-wide 
+  max-width: 100%
+  overflow: hidden
+
+.primary-color
+  color: $primary-color
+
+.secondary-color
+  color: $secondary-color
+
+.third-color 
+  color: $third-color
+
+.height--10em
+  height: 10em
+
+.pull-right
+  float:  right
+
+.row
+  margin-left: -10px
+  margin-right: -10px
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto 
+  padding-right: 10px
+  padding-left: 10px
+
+.woocommerce .woocommerce-breadcrumb 
+  margin: 1em 0 1em
+
+select 
+    padding: 7px 0
+
+.woocommerce ul.products li.product .price ins
+  float: right
+
+.woocommerce ul.products li.product .price del 
+  float: left
+
+.woocommerce-loop-product__link:after
+  content: ""
+  clear: both  
+  display: block
+
+.menu-item > a 
+  color: #fff
+.green-box 
+  color: #fff
+
+.add_to_cart_button 
+  background-color: $secondary-color !important
+  color: #fff !important
+.footer-link a 
+  color: #fff
+
+#primary-content 
+  max-width: 100%
+
+.woocommerce div.product p.price, .woocommerce div.product span.price
+  margin: 1em 0
+
+.woocommerce .quantity .qty
+  height: 45px
+
+.clearfix:before
+  display: block
+  clear: both 
+  content: ""
+
+div.product .woocommerce-tabs
+  margin: 1em 0
+
+.woocommerce div.product .woocommerce-tabs ul.tabs
+  margin: 0 0 -1px 0
+
+.woocommerce div.product .woocommerce-tabs .panel 
+  margin: 0 0 2em
+  padding: 0
+  border: 1px solid #d6d6d6
+  padding: 20px
+  
+.breadcrumb
+  background: none
+  margin-left: 0px
+  padding-left: 0px
+
+input[type="text"], select, text-area
+  min-height: 40px
+  width: auto
+  padding: 3px 5px
+  
+ol, ul
+  margin: 0px
+  
+.site-header-cart .cart-contents
+  padding: 0 0.5em !important
+  
