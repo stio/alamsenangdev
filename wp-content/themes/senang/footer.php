@@ -18,8 +18,8 @@
 					<div class="payment-icons" style="display: block;
     text-align: center;">
 						<p>
-						<img src="http://freemite.com/skin/frontend/default/freemite/images/payment/bca.png">
-						<img src="http://freemite.com/skin/frontend/default/freemite/images/payment/bni.png">
+						<img src="http://freemite.dev/skin/frontend/default/freemite/images/payment/bca.png">
+						<img src="http://freemite.dev/skin/frontend/default/freemite/images/payment/bni.png">
 						</p>
 					</div>
 				</div>

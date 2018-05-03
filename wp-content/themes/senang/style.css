@@ -15,6 +15,7 @@ Text Domain:    stotefornt-child
 body{
 	margin-top:0px;
 	font-size:16px;
+	color: #000;
 }
 
 footer:before {
@@ -320,3 +321,81 @@ footer p{
     font-size: 14px;
     font-weight: bold;
 }
+
+/*start extra pages css*/
+
+.button-download {
+	-moz-box-shadow:inset 0px 1px 0px 0px #c0806f;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #c0806f;
+	box-shadow:inset 0px 1px 0px 0px #c0806f;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c0806f), color-stop(1, #7e2d17) );
+	background:-moz-linear-gradient( center top, #c0806f 5%, #7e2d17 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c0806f', endColorstr='#7e2d17');
+	background-color:#c0806f;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #7e2d17;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #98231a;
+}.button-download:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #7e2d17), color-stop(1, #c0806f) );
+	background:-moz-linear-gradient( center top, #7e2d17 5%, #c0806f 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#7e2d17', endColorstr='#c0806f');
+	background-color:#7e2d17;
+}.button-download:active {
+	position:relative;
+	top:1px;
+}
+
+.page_text img {
+	max-width: inherit;
+} 
+
+table         { border:0; border-collapse:collapse; border-spacing:0; empty-cells:show; font-size:100%; }
+caption,th,td { vertical-align:top; text-align:left; font-weight:normal; }
+
+table ol, table ul {
+    margin: 25px;
+}
+
+/* Sidebar =============================================================================== */
+.block { border:1px solid #005aa9; margin:0 0 10px; -moz-border-radius:5px; -webkit-border-radius:5px;}
+.block .block-title { background: url(../senang/images/green-left.jpg) right top repeat-y; border-bottom:1px solid #005aa9; padding:3px 10px; }
+.block .block-title strong { font-weight:bold; }
+.block .block-title strong span {}
+.block .block-title a { text-decoration:none !important; }
+.block .block-subtitle { font-size:13px; font-weight:bold; }
+.block .block-content { padding:10px; }
+.block .block-content li.item { padding:5px 0; }
+.block .btn-remove { float:right; }
+.block .actions { text-align:right; }
+.block .actions a { float:left; }
+.block .empty {}
+
+.block li.odd {}
+.block li.even { background-color:#f6f6f6; }
+a.nav-link{
+	text-decoration: none;
+}
+a {
+    color: #05c;
+    text-decoration: underline;
+}
+
+.std ol, .std dl, .std p, .std address, .std blockquote {
+    margin: 0 0 1em;
+    padding: 0;
+}
+
+.entry-header {
+	display: none;
+}
+
+/*end extra pages css*/

@@ -78,7 +78,7 @@
 							
 						</div>
 						<div class="table-cell">
-							<img style="height:100px;" height="100px" src="http://freemite.com/skin/frontend/default/freemite/images/Olivia.png">
+							<img style="height:100px;" height="100px" src="http://freemite.dev/skin/frontend/default/freemite/images/Olivia.png">
 						</div>
 					</div>
 				</div>
