@@ -79,7 +79,7 @@ footer:before {
 }
 .media-heading{margin: 20px 0;}
 .media-body p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.7em;
 }
 
@@ -121,7 +121,7 @@ ul.products li.product img {
 }
 
 .panel-grid ul li {
-    font-size: 12px;
+    font-size: 16px;
     line-height: 22px;
     text-decoration: none;
     color: #000;
@@ -132,7 +132,7 @@ ul.products li.product img {
 	 list-style: none;
 }
 .panel-grid ol li {
-    font-size: 12px;
+    font-size: 16px;
     line-height: 22px;
     text-decoration: none;
     color: #000;
@@ -264,7 +264,7 @@ footer p{
 }
 
 .widget .widget-title, .widget .widgettitle {
-    font-size: 15px;
+    font-size: 16px;
     letter-spacing: 0;
     border-bottom: 1px solid rgba(0,0,0,.05);
     padding: 0 0 1em;
