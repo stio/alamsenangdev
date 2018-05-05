@@ -398,4 +398,8 @@ a {
 	display: none;
 }
 
+img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail.wp-post-image {
+    height: 280px;
+}
+
 /*end extra pages css*/
