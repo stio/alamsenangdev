@@ -9,11 +9,13 @@ if ( ! function_exists( 'wpt_setup' ) ):
 	function wpt_register_js() {
 		wp_register_script('bootstrap.min', get_stylesheet_directory_uri() . '/assets/bootstrap/js/bootstrap.min.js');
 		wp_register_script( 'slim', get_stylesheet_directory_uri() . '/assets/jquery/jquery-3.2.1.slim.min.js' , ARRAY('jcf'));
+        wp_register_script('jquery-1.9.1', get_stylesheet_directory_uri() . '/assets/jquery/jquery-1.9.1.js');
 		wp_register_script( 'poper',  get_stylesheet_directory_uri() . '/assets/jquery/popper.min.js' );
 		wp_register_script( 'newsbox',  'https://www.jquery-az.com/boots/js/newsbox/jquery.bootstrap.newsbox.min.js',array('jquery'));
 		wp_register_script('jcf', get_stylesheet_directory_uri() . '/assets/jcf/js/jcf.js',array('jquery'));
 		wp_enqueue_script('jcf');
 		wp_enqueue_script('bootstrap.min');
+        wp_enqueue_script('jquery-1.9.1');
 		wp_enqueue_script( 'poper' );
 		wp_enqueue_script( 'newsbox' );
 		
