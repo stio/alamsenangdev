@@ -54,7 +54,9 @@
 					
 				</div>
 				<div class="col-md-2">
-				<?php //do_action('wpml_add_language_selector'); ?>
+				<div class="flags">
+					<?php echo do_shortcode('[gtranslate]'); ?>
+				</div>
 				</div>
 				<div class="col-md-4">
 					<div class="table-display height--10em">

@@ -402,6 +402,15 @@ img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail.wp-post-image {
     height: 280px;
 }
 
+.flags {
+    top: 50px;
+    position: absolute;
+}
+
+.flags a {
+    padding: 0px 5%;
+}
+
 
 /*end extra pages css*/
 
