@@ -371,6 +371,9 @@ function homepage_content(){
 	get_template_part( 'content', 'home' );
 }
 
+function homepage_content2(){
+    get_template_part( 'content', 'home2' );
+}
 
 function loop_header(){
 	?>
@@ -387,15 +390,16 @@ function loop_header(){
 add_action('storefront_page','storefront_page');
 add_action('woocommerce_before_main_content','front_loop_before');
 add_action('home','homepage_content');
+add_action('home2','homepage_content2');
 add_action('senang_loop_post','loop_post');
 add_action('senang_single_post','senang_single_post');
 
 function senang_single_post(){
 	custom_breadcrumbs();
 	?>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header>
+	<!-- <header class="entry-header">
+        <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+    </header> -->
 	<media class="pull-left">
 		<?php 
 		if (has_post_thumbnail()) { ?>
