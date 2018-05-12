@@ -20,12 +20,25 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+$uri_path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+$uri_segments = explode('/', $uri_path);
 ?>
 <form class="woocommerce-ordering" method="get">
 	<select name="orderby" class="orderby">
-		<?php foreach ( $catalog_orderby_options as $id => $name ) : ?>
+		<?php 
+		
+		if ($uri_segments[1] !== 'id'){?>
+
+		<?php foreach ( $catalog_orderby_options as $id => $name ) { ?>
 			<option value="<?php echo esc_attr( $id ); ?>" <?php selected( $orderby, $id ); ?>><?php echo esc_html( $name ); ?></option>
-		<?php endforeach; ?>
+		<?php } ?>
+		<?php } else { ?>
+			<option value="popularity">Urut berdasarkan popularitas</option>
+			<option value="rating">Urut berdasarkan nilai rata-rata</option>
+			<option value="date">Urut berdasarkan kebaruan</option>
+			<option value="price">Urut berdasarkan harga: rendah ke tinggi</option>
+			<option value="price-desc">Urut berdasarkan harga: tinggi ke rendah</option>
+		<?php } ?>
 	</select>
 	<input type="hidden" name="paged" value="1" />
 	<?php wc_query_string_form_fields( null, array( 'orderby', 'submit', 'paged', 'product-page' ) ); ?>

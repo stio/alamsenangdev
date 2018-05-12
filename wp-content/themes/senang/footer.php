@@ -45,7 +45,18 @@
 		</div>
 	</footer>
 	<div class="scrollTop">
-		<a href="javascript;"> Back to Top </a>
+		<?php 
+		$uri_path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+		$uri_segments = explode('/', $uri_path);
+		if ($uri_segments[1] == 'id') {
+			?>
+			<a href="javascript;"> Kembali ke atas </a>
+			<?php
+		} else {
+			?>
+			<a href="javascript;"> Back to Top </a>
+			<?php
+		} ?>
 	</div>
 	<?php wp_footer(); ?>
 		<script type="text/javascript">

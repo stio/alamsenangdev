@@ -1,0 +1,34 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Senang Sekali\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-05-09 13:01+0000\n"
+"PO-Revision-Date: 2018-05-09 13:04+0000\n"
+"Last-Translator: admin <stiow182@gmail.com>\n"
+"Language-Team: \n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#. Description of the theme
+msgid "Alam senang is the perfect theme for your WooCommerce project. D"
+msgstr ""
+
+#. URI of the theme
+msgid "http://alamsenang.com"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://novayadi.com"
+msgstr ""
+
+#. Author of the theme
+msgid "Komang Novayadi"
+msgstr ""
+
+#. Name of the theme
+msgid "Senang Sekali"
+msgstr ""
