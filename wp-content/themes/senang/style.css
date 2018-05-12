@@ -405,12 +405,25 @@ img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail.wp-post-image {
 .flags {
     top: 50px;
     position: absolute;
+    width: 25%;
 }
 
 .flags a {
-    padding: 0px 5%;
+    padding: 0px 1%;
 }
 
+a.glink img {
+    vertical-align: middle;
+    display: inline;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0.8;
+}
+
+a.glink {
+    text-decoration: none;
+}
 
 /*end extra pages css*/
 
@@ -445,4 +458,5 @@ img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail.wp-post-image {
     height: 100%;
     vertical-align: top;
     width: 100%;
+	cursor: zoom-out;
 }

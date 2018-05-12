@@ -54,11 +54,49 @@
 					
 				</div>
 				<div class="col-md-2">
-				<div class="flags">
-					<?php echo do_shortcode('[gtranslate]'); ?>
+					<?php 
+					global $post;
+					$uri = $_SERVER[REQUEST_URI];
+					if ($uri !== '/shop/') {
+						$en = strtolower("/".$post->post_title);
+						$id = strtolower("/id/".$post->post_title)."-2"; 
+					} else {
+						$en = strtolower("/shop/");
+						$id = strtolower("/id/shop/"); 
+					} ?>
+					<div class="flags">
+					<!-- GTranslate: https://gtranslate.io/ -->
+						<a href="<?php echo get_site_url().$en;?>" title="English" class="glink nturl notranslate">
+							<img src="//alamsenang.dev/wp-content/themes/senang/images/flags/en.png" alt="English" height="24" width="24">
+						</a>
+						<a href="<?php echo get_site_url().$id;?>" title="Indonesian" class="glink nturl notranslate">
+							<img src="//alamsenang.dev/wp-content/themes/senang/images/flags/id.png" alt="Indonesian" height="24" width="24">
+						</a>
+
+						<style type="text/css">
+							#goog-gt-tt {display:none !important;}
+							.goog-te-banner-frame {display:none !important;}
+							.goog-te-menu-value:hover {text-decoration:none !important;}
+							.goog-text-highlight {background-color:transparent !important;box-shadow:none !important;}
+							body {top:0 !important;}
+							#google_translate_element2 {display:none!important;}
+						</style>
+					</div>
 				</div>
-				</div>
-				<div class="col-md-4">
+				<?php 
+				$my_id = "";
+				$uri_path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+				$uri_segments = explode('/', $uri_path);
+				if ($uri_segments[1] == 'id') {
+					$my_id = 241;
+				} else {
+					$my_id = 236;
+				}
+				$post_id = get_post($my_id);
+				$content = $post_id->post_content;
+				echo $content; 
+				?>
+				<!-- <div class="col-md-4">
 					<div class="table-display height--10em">
 						<div class="table-cell">
 							<p class="font-bigger text-center">
@@ -83,7 +121,7 @@
 							<img style="height:100px;" height="100px" src="http://freemite.dev/skin/frontend/default/freemite/images/Olivia.png">
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 		<!-- menu-->
